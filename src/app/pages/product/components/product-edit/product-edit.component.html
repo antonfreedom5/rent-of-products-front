@@ -1,0 +1,23 @@
+<div class="edit-container">
+  <div class="flex">
+    <span>Name: </span>
+    <input type="text" [(ngModel)]="data.name">
+  </div>
+  <div class="flex">
+    <span>Price: </span>
+    <input type="text" [(ngModel)]="data.price">
+  </div>
+  <div class="flex">
+    <span>Count: </span>
+    <input type="text" [(ngModel)]="data.count">
+  </div>
+  <div class="flex">
+    <span>Storage: </span>
+    <mat-select class="edit-select" [formControl]="control">
+      <mat-option *ngFor="let position of storageList" [value]="position">{{position.name}}</mat-option>
+    </mat-select>
+  </div>
+  <div class="button-block">
+    <button class="confirm-button" mat-raised-button color="primary" [disabled]="isDisabled" (click)="save()">save</button>
+  </div>
+</div>

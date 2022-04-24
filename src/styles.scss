@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.edit-container {
+  width: 300px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.confirm-button {
+  margin-top: 10px !important;
+}
+
+.button-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-select {
+  padding-left: 55px;
+}

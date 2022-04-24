@@ -1,1 +1,1 @@
-<p>client works!</p>
+<app-common-table [columns]="columns" [data]="clientList$ | async" (deleteAction)="delete($event)" (editAction)="edit($event)"></app-common-table>

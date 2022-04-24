@@ -1,0 +1,29 @@
+:host {
+  .table-container {
+    width: 80%;
+    margin: 20px auto;
+
+    table {
+      width: 100%;
+
+      th, td {
+        text-align: left;
+
+        &:nth-last-child(-n+2) {
+          width: 100px;
+          text-align: right;
+        }
+      }
+
+      .mat-icon:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .empty-list-block {
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: 1px solid;
+  }
+}

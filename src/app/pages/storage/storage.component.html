@@ -1,1 +1,1 @@
-<p>storage works!</p>
+<app-common-table [columns]="columns" [data]="storageList$ | async" (deleteAction)="delete($event)" (editAction)="edit($event)"></app-common-table>

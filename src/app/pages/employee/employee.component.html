@@ -1,1 +1,1 @@
-<p>employee works!</p>
+<app-common-table [columns]="columns" [data]="employeeList$ | async" (deleteAction)="delete($event)" (editAction)="edit($event)"></app-common-table>

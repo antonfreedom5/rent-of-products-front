@@ -1,0 +1,17 @@
+<div class="edit-container">
+  <div class="flex">
+    <span>Name: </span>
+    <input type="text" [(ngModel)]="data.name">
+  </div>
+  <div class="flex">
+    <span>Phone: </span>
+    <input type="text" [(ngModel)]="data.phone">
+  </div>
+  <div class="flex">
+    <span>Address: </span>
+    <input type="text" [(ngModel)]="data.address">
+  </div>
+  <div class="button-block">
+    <button class="confirm-button" mat-raised-button color="primary" [disabled]="isDisabled" (click)="save()">save</button>
+  </div>
+</div>
